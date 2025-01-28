@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.firstContainer {
+  font-family: "Roboto", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  min-width: 100vh;
+  width: 100%;
+}
+
+.secoundContainer {
+  margin: 0;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.211), 0 2px 14px rgba(0, 0, 0, 0.163);
+  transition: border-color 0.3s, box-shadow 0.3s;
+  display: flex;
+  border-radius: 0.375rem;
+}
+
+/*Estilos de Imagens*/
+
+.imagem img {
+  width: 100%;
+  border-top-left-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+  height: 100vh;
+}
+/* Final Estilos de Imagens*/
+
+.formulario {
+  max-width: 35rem;
+  border-top-right-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+  display: flex;
+}
+
+.formulario h2 {
+  padding: 2rem 4rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.formulario form {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+.formulario input {
+  border: 0.1rem solid black;
+  padding: 1rem;
+  border-radius: 0.375rem;
+}
+
+.formulario ::placeholder {
+  text-align: left;
+}
+
+.formulario button {
+  font-size: 1.1rem;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+  background-color: #246a73;
+}
+
+.formulario button:hover {
+  background-color: #075457;
+}
+
+.link {
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.error{
+color: red;
+}
