@@ -31,7 +31,6 @@
   list-style: none;
   margin: 1rem;
   padding: 0px;
-  
 }
 
 .navItem {
@@ -54,7 +53,7 @@
 }
 
 .navLink:hover {
-  color: #3A5A40;
+  color: #3a5a40;
   background-color: #5c7260;
 }
 

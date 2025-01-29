@@ -87,10 +87,39 @@
   justify-content: center;
   align-items: center;
 }
-.modelsList{
+.modelsList {
   background-color: red;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.Banner {
+  position: relative;
+}
+
+.circlehome {
+  width: 900px;
+  height: 900px;
+  position: absolute;
+  top: 150px;
+  right: 235px;
+}
+
+.circlehome img {
+  opacity: 40%;
+  height: inherit;
+  width: inherit;
+  transform-origin: center center;
+  animation: 19s ease-in-out infinite loop;
+}
+
+@keyframes loop {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

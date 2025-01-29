@@ -28,7 +28,7 @@ export default function HomePage() {
           .sort((a, b) => b.quantity_sold - a.quantity_sold) // Ordena pela quantidade vendida (menor para maior)
           .slice(0, 4); // Pega apenas os 4 primeiros (menos vendidos)
 
-        setModels(sortedModels);;
+        setModels(sortedModels);
       } else {
         console.error("Erro ao buscar modelos:", data.error);
       }
@@ -68,56 +68,66 @@ export default function HomePage() {
   if (error) return <p>{error}</p>;
   return (
     <div>
-      <Search/>
-      <Image
-        src="/images/Home.png" // Caminho direto para a imagem na pasta public
-        alt="Tenis Home"
-        width={1500}
-        height={625}
-        style={{
-          borderRadius: "15px",
-          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-        }}
-      />
-      <div style={{ backgroundColor: "rgba(237,224,212,0.8)" }}>
-        <h2
-          style={{
-            fontFamily: "Roboto",
-            textAlign: "center",
-            fontSize: "2rem",
-            margin: "2.5rem",
-            color: "black",
-            margin: "2rem",
-          }}
-        >
-          Confira os nossos destaques!
-        </h2>
-
-        <div className={styles.modelsList}>
-          {models.length > 0 ? (
-            models.map((model, index) => (
-              <ul key={index}>
-                <CardBack
-                  model={model.model}
-                  brand={model.brand}
-                  imageSrc={model.imageSrc} 
-                />
-      
-              </ul>
-            ))
-          ) : (
-            <></>
-          )}
+      <Search />
+      <div className={styles.Banner}>
+        <div className={styles.HomePic}>
+          <Image
+            src="/images/Home.png"
+            alt="Tenis Home"
+            width={2600}
+            height={1150}
+            style={{
+              borderRadius: "15px",
+              boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+            }}
+          />
         </div>
+        <div className={styles.circlehome}>
+          <img
+            src="/images/circlehome.png" // Caminho direto para a imagem na pasta public
+            alt="Circle Home"
+            width={"full"}
+            height={"full"}
+            
+          />
+        </div>
+      </div>
+      <h2
+        style={{
+          fontFamily: "Roboto",
+          textAlign: "center",
+          fontSize: "2rem",
+          margin: "2.5rem",
+          color: "black",
+          margin: "2rem",
+        }}
+      >
+        Confira os nossos destaques!
+      </h2>
+      <div className={styles.modelsList}>
+        {models.length > 0 ? (
+          models.map((model, index) => (
+            <ul key={index}>
+              <CardBack
+                model={model.model}
+                brand={model.brand}
+                imageSrc={model.imageSrc}
+              />
+            </ul>
+          ))
+        ) : (
+          <></>
+        )}
       </div>
       <h2>Confira todos os nossos produtos!</h2>
       {/* CardBack */} <BrandFilter />
       <div className={styles.contactSection}>
         {" "}
         {modalValue ? <Modal onClose={handleModal} /> : null}
-        <Pedidoespecial 
-        onClick={handleModal}
-        title="Quero um Modelo Especial"/>
+        <Pedidoespecial
+          onClick={handleModal}
+          title="Quero um Modelo Especial"
+        />
       </div>
     </div>
   );
