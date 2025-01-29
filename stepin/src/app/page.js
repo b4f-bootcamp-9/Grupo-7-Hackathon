@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Modal from "@/components/Modal";
 import CardBack from "@/components/CardBack";
 import Search from "@/components/Search";
+import { Pedidoespecial } from "@/components/Pedidoespecial";
 
 export default function HomePage() {
   const [models, setModels] = useState([]);
@@ -114,9 +115,10 @@ export default function HomePage() {
       <div className={styles.contactSection}>
         {" "}
         {modalValue ? <Modal onClose={handleModal} /> : null}
-        <button onClick={handleModal}>Entrar em contacto</button>
+        <Pedidoespecial 
+        onClick={handleModal}
+        title="Quero um Modelo Especial"/>
       </div>
-    
     </div>
   );
 }
