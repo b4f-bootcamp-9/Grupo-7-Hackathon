@@ -40,11 +40,13 @@ export default function AnnoucementPage() {
       className={styles.image}     // Se desejar estilizar a imagem com CSS
     />
   </div>
+  <div>
     <Pedidoespecial 
-  className={styles.compra} 
-  title={"Compre já"} 
+    className={styles.compra} 
+    title={"Compre já"} 
   />
-      </div>
     </div>
+  </div>
+</div>
   );
 }
