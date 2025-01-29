@@ -22,7 +22,7 @@ export default function Login() {
     const res = await fetch("/api/login", options);
     if (res.status === 200) {
       //REENCAMINHAR PARA OUTRA PAGINA
-      router.push("/home-supplier");
+      router.push("/back-office");
     } else if (res.status === 401) {
       // Atualizar a mensagem de erro se as credenciais forem inválidas
       setErrorMessage("Email ou senha incorretos. Tente novamente.");
