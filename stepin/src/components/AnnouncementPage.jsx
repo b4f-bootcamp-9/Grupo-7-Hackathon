@@ -11,7 +11,8 @@ export default function AnnoucementPage() {
         <h2>Informações sobre o produto:</h2>
         <p>Sapato Puma Future Rider Play On</p>
         <p>Categoria: Sapatos Lazer</p>
-        <p>Masculino</p><br>
+        <p>Masculino</p>
+        <p>Valor: 90€</p><br>
         </br>
         {/* Tamanhos Disponíveis */}
         <h3>Tamanhos Disponíveis:</h3>
