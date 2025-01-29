@@ -4,11 +4,9 @@ const col = "stock"
 const db = "stepin"
 
 
-async function FindBrand(filters ={}) {
+async function FindBrand(query) {
     try{
         const collection = await getMongoCollection(db, col)
-
-        const query = filters.brand ? { brand: filters.brand} : {}
 
         return await collection.find(query).toArray()
     }catch(error){

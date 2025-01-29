@@ -1,3 +1,5 @@
+"use cliente"
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function Search() {
@@ -6,39 +8,28 @@ export default function Search() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [results, setResults] = useState([]);
+  const router = useRouter();
 
   const handleSearch = async () => {
     setLoading(true);
     setError(null);
 
+
     try {
-      const response = await fetch(`/api/search?brand=${brand}&searchValue=${searchValue}`);
+      const response = await fetch(
+        `/api/search?brand=${brand}&searchValue=${searchValue}`
+      );
       const data = await response.json();
 
       if (data.response) {
-        if (data.response.length === 0) {
-          // Se não houver resultados, adiciona ou atualiza o pedido
-          const orderResponse = await fetch("/api/order", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              model: searchValue,
-              brand: brand,
-            }),
-          });
-          const orderData = await orderResponse.json();
-          if (orderData.success) {
-            setError(orderData.message);
-          }
-        } else {
-          setResults(data.response);
-        }
+        router.push(
+        `/search?brand=${brand}&searchValue=${searchValue}`)
+      
       } else {
         setError("Erro ao buscar os dados.");
       }
     } catch (err) {
+      console.log(err);
       setError("Erro ao processar a solicitação.");
     } finally {
       setLoading(false);
@@ -71,11 +62,12 @@ export default function Search() {
       {results.length > 0 && (
         <ul>
           {results.map((result, index) => (
-            <li key={index}>{result.model} - {result.brand}</li>
+            <li key={index}>
+              {result.model} - {result.brand}
+            </li>
           ))}
         </ul>
       )}
     </div>
   );
 }
-
