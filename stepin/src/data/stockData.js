@@ -12,8 +12,8 @@ async function FindBrand(filters ={}) {
 
         return await collection.find(query).toArray()
     }catch(error){
-        console.log("Erro ao buscar fornecedores: ", error);
-        throw new Error("Erro ao buscar fornecedores")
+        console.log("Erro ao buscar marcas: ", error);
+        throw new Error("Erro ao buscar marcas")
         
     }
 

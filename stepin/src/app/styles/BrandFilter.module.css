@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza os elementos */
+    gap: 2rem; /* Espaço entre os botões e os cards */
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem; /* Espaço entre os botões */
+    justify-content: center;
+  }
+  
+  .modelsList {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards fiquem lado a lado e quebrem linha */
+    justify-content: center; /* Centraliza os cards */
+    gap: 1rem; /* Espaço entre os cards */
+    width: 100%;
+  }
+  
