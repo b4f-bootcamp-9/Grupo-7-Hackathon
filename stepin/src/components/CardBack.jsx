@@ -3,11 +3,11 @@ import styles from "../app/styles/CardBack.module.css";
 // import {Sabermais } from "./Sabermais";
 import { useRouter } from "next/navigation";
 
-const CardBack = ({ model, brand, quantity_sold, imageSrc }) => {
+const CardBack = ({ model, brand, imageSrc, onClick }) => {
 
   const router = useRouter();
   return (
-    <div className={styles.card}>
+    <div className={styles.card} onClick={onClick}>
       {/* Imagem */}
       <div className={styles.imageContainer}>
         <img 
@@ -40,8 +40,6 @@ const CardBack = ({ model, brand, quantity_sold, imageSrc }) => {
         <span className={styles.infoText}>
         <strong>Modelo:</strong> {model}
           </span>
-        
-
         {/* Botão posicionado no canto inferior direito */}
         <div className={styles.buttonContainer}>
           {/* <Sabermais title={"Saber Mais"} onClick={() =>

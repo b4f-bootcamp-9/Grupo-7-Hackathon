@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import styles from "../app/styles/BrandFilter.module.css";
 import CardBack from "./CardBack";
 import { useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 export default function BrandFilter() {
   const [models, setModels] = useState([]);
@@ -44,6 +45,7 @@ export default function BrandFilter() {
     fetchModels(brand); // Chama a função para buscar modelos dessa marca
   };
 
+  const router = useRouter();
   return (
     <div className={styles.container}>
       <div className={styles.buttons}>
@@ -122,13 +124,14 @@ export default function BrandFilter() {
           models.map((model, index, imagem) => (
             <ul key={index}>
               <CardBack
+              onClick={() =>
+                  router.push(
+                    "/details"
+                  )}
                 model={model.model}
                 brand={model.brand}
-                imageSrc={model.imagem} // Supondo que você tenha uma URL de imagem ou um caminho
+                imageSrc={model.imagem} 
               />
-              {/* <p>Modelo: {model.model}</p>
-              <p>Marca: {model.brand}</p>
-              <p>Quantidade Vendida: {model.quantity_sold}</p> */}
             </ul>
           ))
         ) : (
