@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.footer {
+  border-top: 0.063rem solid #ccc;
+  font-family: "Roboto", serif;
+  display: flex;
+  justify-content: flex-end;
+  height: 10rem;
+}
+
+/*Coluna 1*/
+.column1 {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1rem;
+  width: 20%;
+  padding-top: 2rem;
+}
+
+.column1 ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+.column1 :link {
+  color: black;
+  margin: 0 1rem;
+  list-style: none;
+  text-decoration: none;
+}
+.column1 :link:hover {
+  color: #246a73;
+}
+
+/*Fim da Coluna 1*/
+
+/*Coluna 2*/
+.column2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 80%;
+  margin: 0;
+}
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+.column2 p {
+  height: fit-content;
+}
+
+.column2 ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+.column2 :link {
+  list-style: none;
+  color: black;
+  text-decoration: none;
+}
+
+.footerText {
+  font-size: 1rem;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Fim da Coluna 2*/
+
+/*Coluna 3*/
+.column3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1rem;
+  width: 20%;
+  margin: 0;
+}
+.column3 p {
+  margin: 0;
+}
+.column3 ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+.column3 :link {
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
+}
+/* Fim da Coluna 3*/

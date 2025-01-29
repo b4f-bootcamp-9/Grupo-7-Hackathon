@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.backButton {
+  font-family: "Roboto", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3A5A40; /* Cor do botão */
+  color: white; /* Cor da seta */
+  border: none;
+  border-radius: 50%; /* Torna o botão circular */
+  width: 2rem; /* Define largura circular */
+  height: 2rem; /* Define altura circular */
+  cursor: pointer;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.211), 0 2px 14px rgba(0, 0, 0, 0.163);
+  position: relative; /* Permite posicionar o texto fora do círculo */
+  transition: transform 0.2s ease; /* Animação ao passar o mouse */
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.backButton:hover {
+  transform: scale(1.1);
+  background-color: #075457; /* Efeito ao passar o mouse */
+}
+
+.icon {
+  font-size: 1rem; /* Tamanho da seta */
+  color: white; /* Cor da seta */
+}
+
+.text {
+  position: absolute; /* Texto posicionado fora do círculo */
+  top: 50%; /* Centraliza verticalmente */
+  left: 2.5rem; /* Posiciona à direita do círculo */
+  transform: translateY(-50%); /* Ajusta para centralizar perfeitamente */
+  font-size: 1rem; /* Tamanho do texto */
+  color: black; /* Cor do texto */
+  white-space: nowrap; /* Evita quebra de linha */
+}
