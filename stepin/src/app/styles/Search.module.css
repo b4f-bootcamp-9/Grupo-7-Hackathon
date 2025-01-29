@@ -6,9 +6,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-top-left-radius: 10px;  /* Arredonda o canto superior esquerdo */
-    border-top-right-radius: 10px; /* Arredonda o canto superior direito */
-    border-bottom-left-radius: 0;  /* Mantém os cantos inferiores retos */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .btn:hover {
-    transform: scale(1.1); /* Aumenta um pouco o botão */
-    background-color: #3A5A40; /* Muda a cor para verde */
-    color: white; /* Altera a cor do texto para branco */
+    transform: scale(1.1);
+    background-color: #3A5A40;
+    color: white;
 }

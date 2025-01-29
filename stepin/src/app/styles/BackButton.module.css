@@ -5,36 +5,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #3A5A40; /* Cor do botão */
-  color: white; /* Cor da seta */
+  background-color: #3A5A40; 
+  color: white;
   border: none;
-  border-radius: 50%; /* Torna o botão circular */
-  width: 2rem; /* Define largura circular */
-  height: 2rem; /* Define altura circular */
+  border-radius: 50%;
+  width: 2rem; 
+  height: 2rem; 
   cursor: pointer;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.211), 0 2px 14px rgba(0, 0, 0, 0.163);
-  position: relative; /* Permite posicionar o texto fora do círculo */
-  transition: transform 0.2s ease; /* Animação ao passar o mouse */
+  position: relative; 
+  transition: transform 0.2s ease;
   margin-left: 1rem;
   margin-top: 1rem;
 }
 
 .backButton:hover {
   transform: scale(1.1);
-  background-color: #5c7260; /* Efeito ao passar o mouse */
+  background-color: #5c7260; 
 }
 
 .icon {
-  font-size: 1rem; /* Tamanho da seta */
-  color: white; /* Cor da seta */
+  font-size: 1rem; 
+  color: white; 
 }
 
 .text {
-  position: absolute; /* Texto posicionado fora do círculo */
-  top: 50%; /* Centraliza verticalmente */
-  left: 2.5rem; /* Posiciona à direita do círculo */
-  transform: translateY(-50%); /* Ajusta para centralizar perfeitamente */
-  font-size: 1rem; /* Tamanho do texto */
-  color: black; /* Cor do texto */
-  white-space: nowrap; /* Evita quebra de linha */
+  position: absolute;
+  top: 50%;
+  left: 2.5rem;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: black;
+  white-space: nowrap;
 }

@@ -120,21 +120,6 @@ export default function HomePage() {
         ) : (
           <></>
         )}
-      {/* <Image
-        src="/images/Home.png" // Caminho direto para a imagem na pasta public
-        alt="Tenis Home"
-        width={1500}
-        height={625}
-        style={{
-          borderRadius: "15px",
-          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-        }}
-      /> */}
-      {/* <div style={{ backgroundColor: "rgba(237,224,212,0.8)", fontFamily: "Roboto",
-            textAlign: "center",
-            fontSize: "1.5rem",
-            color: "black",
-             }}> */}
      
       </div> 
       <div>
