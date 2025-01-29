@@ -1,7 +1,9 @@
 .container {
     width: 80%;
     margin: 20px auto;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", serif;
+    margin-bottom: 20rem;
+
   }
   .tittle{
     text-align: center;
