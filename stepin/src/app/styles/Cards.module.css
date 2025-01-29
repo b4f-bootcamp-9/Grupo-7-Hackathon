@@ -79,3 +79,18 @@
 .icon {
   margin-right: 0.5rem;
 }
+
+.contactSection {
+  display: flex;
+  margin-top: 8rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modelsList{
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

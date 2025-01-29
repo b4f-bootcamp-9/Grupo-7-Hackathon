@@ -1,116 +1,74 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
+/* Modal.module.css */
 .container {
-  font-family: "Roboto", serif;
-  background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semitransparente */
-  width: 100vw; /* Ocupa toda a largura */
-  height: 100vh; /* Ocupa toda a altura */
-  position: fixed; /* Fixa na tela */
+  position: fixed;
   top: 0;
   left: 0;
-  display: flex; /* Centraliza o modal */
-  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+  display: flex;
   justify-content: center;
-  z-index: 1000; /* Fica acima de outros elementos */
+  align-items: center; /* Centraliza verticalmente */
+  z-index: 1000;
 }
 
 .modal {
-  width: 90%; /* Adapta-se a telas menores */
-  max-width: 520px; /* Tamanho máximo do modal */
-  background-color: #efdfdf; /* Cor de fundo */
-  border-radius: 0.4rem; /* Borda arredondada */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
-  display: flex;
-  flex-direction: column; /* Layout em coluna */
-  justify-content: space-between; /* Espaçamento interno */
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
 }
 
-.modalHeader {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 0.063rem solid rgba(128, 128, 128, 0.247);
-  padding: 0.435rem;
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .modalHeader h1 {
-  font-size: 2.5rem;
-}
-
-.modal span {
-  display: flex;
-  justify-content: right;
-  margin-top: 1rem;
-  margin-right: 1rem;
-  font-weight: bolder;
-  font-size: 1.4rem;
-  color: gray;
-  cursor: pointer; /* Indica que é clicável */
-  -webkit-user-select: none;
-}
-
-.modal span:active {
-  color: rgb(33, 33, 33);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .textModal {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
+  gap: 1rem;
+}
+
+.inputField {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   font-size: 1rem;
-  color: #333; /* Cor do texto */
-}
-.textModal input,
-.textModal textarea {
-  margin-bottom: 0.938rem;
-  padding: 0.625rem;
-  border: 0.063rem solid #ddd;
-  border-radius: 0.375rem;
-  font-size: 1rem;
-  width: 70%;
-}
-
-.textModal textarea {
-  min-height: 5rem;
-}
-.textModal input::placeholder,
-.textModal textarea::placeholder {
-  color: #aaa;
-}
-
-/* Mensagem de Status */
-.textModal p {
-  margin: 0.625rem 0;
-  font-size: 0.875rem;
-  color: #555;
-}
-
-.textModal p:last-child {
-  color: #888;
 }
 
 .button {
   display: flex;
   justify-content: center;
-  padding: 1rem;
-  border-top: 0.063rem solid rgba(128, 128, 128, 0.247);
+  margin-top: 1rem;
 }
 
 .enviar {
-  background-color: #007b7f;
-  border: none;
-  outline: none;
-  cursor: pointer;
+  background: #007bff;
   color: white;
-  padding: 0.5rem 2rem;
-  border-radius: 0.3rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
   font-size: 1rem;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 .enviar:hover {
-  background-color: #005f60; /* Cor ao passar o mouse */
+  background: #0056b3;
 }

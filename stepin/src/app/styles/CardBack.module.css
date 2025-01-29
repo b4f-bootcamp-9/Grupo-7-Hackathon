@@ -2,126 +2,79 @@
 
 .card {
   font-family: "Roboto", serif;
+  width: 18rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.235), 0 2px 14px rgba(0, 0, 0, 0.235);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;
   display: flex;
-  gap: 3rem;
-  align-items: center; /* Alinha os itens no início do eixo vertical */
-  width: 100%;
-  height: 100%;
-  max-width: 60rem; /* Define largura máxima */
-  margin: 0.2rem auto; /* Espaço entre os cards */
-  padding: 1.5rem;
-  /* border: 1rem solid #DDBEA8; Coloquei borda pra ter espaço no fim e inicio da lista se foe fundo colorido */
-  border-radius: 0.375rem;
-  background-color: #f8f8f8; /* Fundo mais claro */
+  flex-direction: column;
+  cursor: pointer;
+}
 
-  position: relative; /* Para posicionar o botão no canto inferior */
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .imageContainer {
-  flex: 0 0 14rem; /* tamanho da imagem */
-  width: 12rem; /* Define largura consistente para a imagem */
-  height: 8rem; /* Altura consistente */
-  overflow: hidden;
-  border-radius: 0.5rem;
+  position: relative;
+  width: 100%;
+  height: 200px;
 }
 
 .image {
+  border-radius: 8px 8px 0 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 0.5rem;
 }
 
 .content {
-  padding-left: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Espaço entre título, informações e botão */
-  padding-left: 0;
-  width: 6.25rem;
-}
-
-.infoRow {
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  width: 30rem; /* Espaço da descricao */
-}
-
-.infoText {
-  font-size: 1rem;
-  color: #160f29;
-  line-height: 1.4;
-  white-space: nowrap; /* Impede quebra de linha */
-  overflow: hidden; /* Esconde texto que ultrapasse */
-  text-overflow: ellipsis; /* Adiciona "..." se o texto for muito longo */
-  height: 2rem; /* Altura fixa para cada linha de texto */
+  padding: 1rem;
 }
 
 .title {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin: 0 0 8px 0;
 }
+
+.infoRow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  margin: 1rem;
+}
+
+.infoText {
+  font-size: 0.875rem;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
 .starsContainer {
   display: flex;
   align-items: center;
 }
 
 .starFilled {
-  color: #ffd700; /* Cor das estrelas preenchidas */
+  color: #ffd700;
 }
 
 .starEmpty {
-  color: #e0e0e0; /* Cor das estrelas vazias */
+  color: #e0e0e0;
 }
 
-.infoRow {
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.infoText {
-  font-size: 1rem;
-  color: #160f29;
-  line-height: 1.4;
-  margin-bottom: 0.5rem;
+.reviewsText {
+  margin-left: 0.5rem;
+  font-size: 0.875rem;
+  color: #888;
 }
 
 .buttonContainer {
-  position: absolute;
-  bottom: 1.5rem; /* Distância do botão até a parte inferior do card */
-  right: 1.5rem; /* Distância do botão até a borda direita do card */
-}
-
-.button {
-  padding: 0.8rem 1.5rem;
-  background-color: #246a73;
-  color: #fff;
-  font-size: 1rem;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #075457;
-}
-
-/* Responsividade */
-@media (max-width: 48rem) {
-  .card {
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative; /* Para reposicionar o botão */
-  }
-}
-
-.imageContainer {
-  width: 100%;
-  height: auto;
-}
-.hiddenText {
-  display: none; /* Oculta o elemento numero das estrelas*/
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
 }
