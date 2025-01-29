@@ -8,32 +8,26 @@ export default function AnnoucementPage() {
     <div className={styles.container}>
       {/* Seção de Informações */}
       <div className={styles.infoSection}>
-        <h2>Informações</h2>
-        <p>Bla bla bla</p>
-
+        <h2>Informações sobre o produto:</h2>
+        <p>Sapato Puma Future Rider Play On</p>
+        <p>Categoria: Sapatos Lazer</p>
+        <p>Masculino</p><br>
+        </br>
         {/* Tamanhos Disponíveis */}
-        <h3>Tamanhos Disponíveis</h3>
+        <h3>Tamanhos Disponíveis:</h3>
+        <div className={styles.tamanhoContainer}>
         <Pedidoespecial 
-      className={styles.buttonPedidoespecial} 
-      title={"Tamanho 37"}
-    />
-    <Pedidoespecial 
-      className={styles.buttonPedidoespecial} 
-      title={"Tamanho 38"}
-    />
-    <Pedidoespecial 
-      className={styles.buttonPedidoespecial} 
-      title={"Tamanho 39"}
-    />
-    <Pedidoespecial 
-      className={styles.buttonPedidoespecial} 
-      title={"Tamanho 40"}
-    />
-    <Pedidoespecial 
-      className={styles.buttonPedidoespecial} 
-      title={"Tamanho 41"}
-    />
-    </div>
+        className={styles.buttonPedidoespecial} title={"37"} />
+        <Pedidoespecial 
+        className={styles.buttonPedidoespecial} title={"38"} />
+        <Pedidoespecial 
+        className={styles.buttonPedidoespecial} title={"39"} />
+        <Pedidoespecial 
+        className={styles.buttonPedidoespecial} title={"40"} />
+        <Pedidoespecial 
+        className={styles.buttonPedidoespecial} title={"41"} />
+</div>
+</div>
 
       {/* Seção de Imagem */}
       <div className={styles.imageSection}>
@@ -41,14 +35,15 @@ export default function AnnoucementPage() {
     {/* Aqui você adiciona sua imagem */}
     <img 
       src="/images/tenis1.png"  // Substitua pelo caminho correto da sua imagem
-      alt="Tenis"    // Sempre coloque um alt para acessibilidade
+      alt="Sapato Puma Future Rider Play On"    // Sempre coloque um alt para acessibilidade
+      width={"500px"}
       className={styles.image}     // Se desejar estilizar a imagem com CSS
     />
   </div>
-        <Pedidoespecial 
-      className={styles.buttonPedidoespecial} 
-      title={"Compre Ja"}
-    />
+    <Pedidoespecial 
+  className={styles.compra} 
+  title={"Compre já"} 
+  />
       </div>
     </div>
   );

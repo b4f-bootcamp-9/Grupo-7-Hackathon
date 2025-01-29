@@ -48,9 +48,15 @@ export default function Modal({ onClose }) {
           &times;
         </button>
         <div className={styles.modalHeader}>
-          <h1>Faça seu pedido</h1>
+          <h1>Faça o seu pedido</h1>
         </div>
         <form onSubmit={handleSubmit} className={styles.textModal}>
+        <input
+            type="text"
+            name="Nome"
+            placeholder="Nome:"
+            className={styles.inputField}
+          />
           <input
             type="text"
             name="model"
@@ -67,6 +73,12 @@ export default function Modal({ onClose }) {
             value={brand}
             onChange={(e) => setBrand(e.target.value)}
             required
+            className={styles.inputField}
+          />
+          <input
+            type="text"
+            name="email"
+            placeholder="E-mail:"
             className={styles.inputField}
           />
           {messageSent ? (

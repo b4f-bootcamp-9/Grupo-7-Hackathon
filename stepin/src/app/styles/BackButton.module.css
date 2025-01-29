@@ -21,7 +21,7 @@
 
 .backButton:hover {
   transform: scale(1.1);
-  background-color: #075457; /* Efeito ao passar o mouse */
+  background-color: #5c7260; /* Efeito ao passar o mouse */
 }
 
 .icon {

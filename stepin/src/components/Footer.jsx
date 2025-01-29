@@ -20,6 +20,37 @@ const Footer = () => {
           2025 StepIn. Todos os direitos reservados.
         </p>
       </div>
+      <div className={styles.column3}>
+        <p>Siga-nos em</p>
+        <div className={styles.socialIcons}>
+          <a
+            href="https://pinterest.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/pinterest.svg" alt="Pinterest" width="32" height="32" />
+          </a>
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/facebook.svg" alt="Facebook" width="32" height="32" />
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/x.svg" alt="X (Twitter)" width="32" height="32" />
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a>
+      </div>
+      </div>
     </div>
   );
 };
