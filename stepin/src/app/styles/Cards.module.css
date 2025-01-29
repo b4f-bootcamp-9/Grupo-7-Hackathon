@@ -100,15 +100,15 @@
 }
 
 .circlehome {
-  width: 900px;
-  height: 900px;
+  width: 600px;
+  height: 600px;
   position: absolute;
-  top: 150px;
-  right: 235px;
+  top: 125px;
+  right: 275px;
 }
 
 .circlehome img {
-  opacity: 40%;
+  opacity: 50%;
   height: inherit;
   width: inherit;
   transform-origin: center center;

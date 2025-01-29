@@ -74,8 +74,8 @@ export default function HomePage() {
           <Image
             src="/images/Home.png"
             alt="Tenis Home"
-            width={2600}
-            height={1150}
+            width={1890}
+            height={800}
             style={{
               borderRadius: "15px",
               boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
@@ -117,8 +117,7 @@ export default function HomePage() {
         ) : (
           <></>
         )}
-      <Search/>
-      <Image
+      {/* <Image
         src="/images/Home.png" // Caminho direto para a imagem na pasta public
         alt="Tenis Home"
         width={1500}
@@ -127,36 +126,17 @@ export default function HomePage() {
           borderRadius: "15px",
           boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
         }}
-      />
-      <div style={{ backgroundColor: "rgba(237,224,212,0.8)", fontFamily: "Roboto",
+      /> */}
+      {/* <div style={{ backgroundColor: "rgba(237,224,212,0.8)", fontFamily: "Roboto",
             textAlign: "center",
             fontSize: "1.5rem",
             color: "black",
-             }}>
-        <h2>
-          Confira os nossos destaques!
-        </h2>
-
-        <div className={styles.modelsList}>
-          {models.length > 0 ? (
-            models.map((model, index) => (
-              <ul key={index}>
-                <CardBack
-                  model={model.model}
-                  brand={model.brand}
-                  imageSrc={model.imageSrc} 
-                />
-      
-              </ul>
-            ))
-          ) : (
-            <></>
-          )}
-        </div>
+             }}> */}
+     
+      </div> 
       <div>
       <h2>
         Confira todos os nossos produtos!</h2>
-      </div>
       </div>
       {/* CardBack */} <BrandFilter />
       <div className={styles.contactSection}>
@@ -168,6 +148,5 @@ export default function HomePage() {
         />
       </div>
     </div>
-  </div>
   );
 }
