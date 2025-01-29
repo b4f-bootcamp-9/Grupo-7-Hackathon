@@ -11,7 +11,7 @@ const CardBack = ({ model, brand, quantity_sold, imageSrc }) => {
       {/* Imagem */}
       <div className={styles.imageContainer}>
         <img 
-          src={imageSrc || "/Images/cardback.png"} 
+          src={"./images/"+imageSrc || "/Images/cardback.png"} 
           alt={brand || "Imagem do fornecedor"} 
           className={styles.image} 
         />

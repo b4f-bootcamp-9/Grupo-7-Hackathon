@@ -90,12 +90,12 @@ export default function BrandFilter() {
       {/* Exibe os modelos da marca escolhida */}
       <div className={styles.modelsList}>
         {models.length > 0 ? (
-          models.map((model, index) => (
+          models.map((model, index, imagem) => (
             <ul key={index}>
               <CardBack
                 model={model.model}
                 brand={model.brand}
-                imageSrc={model.imageSrc} // Supondo que você tenha uma URL de imagem ou um caminho
+                imageSrc={model.imagem} // Supondo que você tenha uma URL de imagem ou um caminho
               />
               {/* <p>Modelo: {model.model}</p>
               <p>Marca: {model.brand}</p>
