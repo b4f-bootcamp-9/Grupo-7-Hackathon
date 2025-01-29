@@ -79,17 +79,12 @@ export default function HomePage() {
           boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
         }}
       />
-      <div style={{ backgroundColor: "rgba(237,224,212,0.8)" }}>
-        <h2
-          style={{
-            fontFamily: "Roboto",
+      <div style={{ backgroundColor: "rgba(237,224,212,0.8)", fontFamily: "Roboto",
             textAlign: "center",
-            fontSize: "2rem",
-            margin: "2.5rem",
+            fontSize: "1.5rem",
             color: "black",
-            margin: "2rem",
-          }}
-        >
+             }}>
+        <h2>
           Confira os nossos destaques!
         </h2>
 
@@ -109,8 +104,11 @@ export default function HomePage() {
             <></>
           )}
         </div>
+      <div>
+      <h2>
+        Confira todos os nossos produtos!</h2>
       </div>
-      <h2>Confira todos os nossos produtos!</h2>
+      </div>
       {/* CardBack */} <BrandFilter />
       <div className={styles.contactSection}>
         {" "}
