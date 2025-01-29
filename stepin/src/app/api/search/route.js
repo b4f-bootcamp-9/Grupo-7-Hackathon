@@ -1,9 +1,11 @@
+import { addOrUpdateOrder } from "@/services/ordersService";
 import { ReadBrand } from "@/services/stockService";
 import { NextResponse } from "next/server";
 
 
 export async function GET(req) {
     try {
+      const url = new URL(req.url);
       const brand = url.searchParams.get("brand")
       const searchValue = url.searchParams.get("searchValue")
      
@@ -17,12 +19,17 @@ export async function GET(req) {
       if (searchValue) {
         query.model = searchValue
       }
+
+      console.log(`search with query:`)
+      console.log(query
+
+      )
       
-      const results = await QueryStock(query);
+      const results = await ReadBrand(query);
       
       if(searchValue && results.length === 0) {
-        saveSearchInterest()
-        addOrUpdateOrder()
+        // saveSearchInterest()
+        addOrUpdateOrder(searchValue, brand)
       }
     
   
