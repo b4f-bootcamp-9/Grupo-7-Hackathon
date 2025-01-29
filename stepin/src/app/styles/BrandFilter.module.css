@@ -1,14 +1,13 @@
 .container {
     display: flex;
    flex-wrap:wrap;
-    justify-content: center; /* Centraliza os elementos */
+    justify-content: center;
     gap: 2rem;
-     /* Espaço entre os botões e os cards */
   }
   
   .buttons {
     display: flex;
-    gap: 1rem; /* Espaço entre os botões */
+    gap: 1rem;
     justify-content: center;
   }
   
@@ -16,7 +15,7 @@
 
 
     display: flex;
-    flex-wrap: wrap; /* Permite que os cards fiquem lado a lado e quebrem linha */
+    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
   }
@@ -24,7 +23,7 @@
   .btn{
     font-family: "Roboto", serif;
     width: 5rem;
-    font-size: 1rem; /* Alterado para tamanho apropriado */
+    font-size: 1rem;
     color: white;
     border-radius: 0.375rem;
     padding: 0.625rem 0.625rem;
@@ -35,6 +34,6 @@
   }
   
   .btn:hover {
-    background-color: #3a5a40; /* Cor de fundo no hover */
-    color: rgb(255, 255, 255);
+    background-color: #3a5a40;
+    text: white;
 }
