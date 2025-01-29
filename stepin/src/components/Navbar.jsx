@@ -73,7 +73,7 @@ function Navbar() {
             className={styles.btnLogo}
             onClick={() => router.push("/login")}
           >
-            <img src="/Images/perfil.png" alt="" className={styles.perfil} />
+            <img src="/images/perfil.png" alt="" className={styles.perfil} />
           </button>
         </li>
       </ul>

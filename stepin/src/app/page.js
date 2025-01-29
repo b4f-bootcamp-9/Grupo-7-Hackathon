@@ -1,8 +1,8 @@
-
+"use client"
 import Image from "next/image"; // Correta importação do Next.js
 import styles from "../../src/app/styles/Cards.module.css";
 import Cards from "@/components/Cards";
-import NavbarSupplier from "../components/NavbarSupplier"; // Importa a Navbar
+import { Pedidoespecial } from "@/components/Pedidoespecial";
 
 export default function HomePage() {
   return (
@@ -141,8 +141,9 @@ export default function HomePage() {
             price="O preço certo para o seu bolso!"
           />
         </div>
+        <Pedidoespecial title="Click aqui se deseja um modelo diferente" onClick={() => alert("Botão clicado!")} />
+          {/* Aqui neste botao vai abrir o modal pop up */}
       </div>
-      
 
   );
 }

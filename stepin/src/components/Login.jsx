@@ -33,10 +33,10 @@ export default function Login() {
   };
   return (
     <div className={styles.firstContainer}>
-      <h1>Event Match</h1>
+      <h1>Login Empresa</h1>
       <div className={styles.secoundContainer}>
         <div className={styles.imagem}>
-          <img src="/images/events.jpg" alt="imagem" />
+          <img src="/images/Home.png" alt="imagem"/>
         </div>
         <div className={styles.formulario}>
           <form>

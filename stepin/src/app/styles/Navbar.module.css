@@ -31,6 +31,7 @@
   list-style: none;
   margin: 1rem;
   padding: 0px;
+  
 }
 
 .navItem {
@@ -48,13 +49,13 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
   text-decoration: none;
-  color: #160f29;
   font-size: 1.25rem; /*tamanho da letra altera aqui*/
   transition: color 0.3s ease;
 }
 
 .navLink:hover {
-  color: #368f8b;
+  color: #3A5A40;
+  background-color: #5c7260;
 }
 
 .navLink:focus {
