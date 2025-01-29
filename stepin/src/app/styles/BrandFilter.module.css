@@ -1,8 +1,9 @@
 .container {
     display: flex;
-    flex-direction: column; /* Organiza os itens em coluna */
-    align-items: center; /* Centraliza os elementos */
-    gap: 2rem; /* Espaço entre os botões e os cards */
+   flex-wrap:wrap;
+    justify-content: center; /* Centraliza os elementos */
+    gap: 2rem;
+     /* Espaço entre os botões e os cards */
   }
   
   .buttons {
@@ -12,10 +13,28 @@
   }
   
   .modelsList {
+
+
     display: flex;
     flex-wrap: wrap; /* Permite que os cards fiquem lado a lado e quebrem linha */
-    justify-content: center; /* Centraliza os cards */
-    gap: 1rem; /* Espaço entre os cards */
     width: 100%;
+    justify-content: center;
   }
   
+  .btn{
+    font-family: "Roboto", serif;
+    width: 5rem;
+    font-size: 1rem; /* Alterado para tamanho apropriado */
+    color: white;
+    border-radius: 0.375rem;
+    padding: 0.625rem 0.625rem;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.211), 0 2px 14px rgba(0, 0, 0, 0.163);
+    cursor: pointer;
+    border: none;
+    margin: 3rem;
+  }
+  
+  .btn:hover {
+    background-color: #3a5a40; /* Cor de fundo no hover */
+  text: white;
+}

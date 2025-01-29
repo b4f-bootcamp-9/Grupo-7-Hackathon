@@ -1,6 +1,7 @@
 "use cliente"
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import styles from "../app/styles/Search.module.css"
 
 export default function Search() {
   const [brand, setBrand] = useState("");
@@ -37,22 +38,22 @@ export default function Search() {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <h1>Busca de Pedido</h1>
       <div>
-        <input
+        <input className={styles.input}
           type="text"
           placeholder="Marca"
           value={brand}
           onChange={(e) => setBrand(e.target.value)}
         />
-        <input
+        <input className={styles.input}
           type="text"
           placeholder="Modelo"
           value={searchValue}
           onChange={(e) => setSearchValue(e.target.value)}
         />
-        <button onClick={handleSearch} disabled={loading}>
+        <button className={styles.btn} onClick={handleSearch} disabled={loading}>
           {loading ? "Buscando..." : "Buscar"}
         </button>
       </div>

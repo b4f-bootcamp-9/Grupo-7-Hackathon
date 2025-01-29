@@ -18,14 +18,14 @@ export default function BrandFilter() {
       const data = await res.json();
 
       if (res.ok) {
-        const sortedModels = data.response.sort((a,b) => {
-            // Ordena primeiro por quantidade vendida (quantidade_sold) de forma crescente
-            if (a.quantity_sold !== b.quantity_sold) {
-              return b.quantity_sold - a.quantity_sold;
-            }
-            // Se a quantidade vendida for igual, ordena por marca alfabeticamente
-            return a.brand.localeCompare(b.brand);
-          });
+        const sortedModels = data.response.sort((a, b) => {
+          // Ordena primeiro por quantidade vendida (quantidade_sold) de forma crescente
+          if (a.quantity_sold !== b.quantity_sold) {
+            return b.quantity_sold - a.quantity_sold;
+          }
+          // Se a quantidade vendida for igual, ordena por marca alfabeticamente
+          return a.brand.localeCompare(b.brand);
+        });
         setModels(sortedModels);
       } else {
         console.error("Erro ao buscar modelos:", data.error);
@@ -49,18 +49,7 @@ export default function BrandFilter() {
       <div className={styles.buttons}>
         {/* Botões para filtrar as marcas */}
         <button
-          style={{
-            color: selectedBrand === "nike" ? "white" : "black",
-            backgroundColor: selectedBrand === "nike" ? "#3a5440" : "",
-            borderRadius: ".5rem",
-            padding: ".5rem",
-            border: "none",
-          }}
-          onClick={() => handleBrandClick("nike")}
-        >
-          Nike
-        </button>
-        <button
+        className={styles.btn}
           style={{
             color: selectedBrand === "adidas" ? "white" : "black",
             backgroundColor: selectedBrand === "adidas" ? "#3a5440" : "",
@@ -73,6 +62,46 @@ export default function BrandFilter() {
           Adidas
         </button>
         <button
+        className={styles.btn}
+          style={{
+            color: selectedBrand === "new balance" ? "white" : "black",
+            backgroundColor: selectedBrand === "new balance" ? "#3a5440" : "",
+            borderRadius: ".5rem",
+            padding: ".5rem",
+            border: "none",
+          }}
+          onClick={() => handleBrandClick("new balance")}
+        >
+          New Balance
+        </button>
+        <button
+        className={styles.btn}
+          style={{
+            color: selectedBrand === "nike" ? "white" : "black",
+            backgroundColor: selectedBrand === "nike" ? "#3a5440" : "",
+            borderRadius: ".5rem",
+            padding: ".5rem",
+            border: "none",
+          }}
+          onClick={() => handleBrandClick("nike")}
+        >
+          Nike
+        </button>
+        <button
+        className={styles.btn}
+          style={{
+            color: selectedBrand === "puma" ? "white" : "black",
+            backgroundColor: selectedBrand === "puma" ? "#3a5440" : "",
+            borderRadius: ".5rem",
+            padding: ".5rem",
+            border: "none",
+          }}
+          onClick={() => handleBrandClick("puma")}
+        >
+          Puma
+        </button>
+        <button
+        className={styles.btn}
           style={{
             color: selectedBrand === null ? "white" : "black",
             backgroundColor: selectedBrand === null ? "#3a5440" : "",

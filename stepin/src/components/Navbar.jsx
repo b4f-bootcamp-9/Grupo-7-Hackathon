@@ -24,7 +24,7 @@ function Navbar() {
           <Link
             style={{
               color: grupo === "grupo5" ? "white" : "black",
-              backgroundColor: grupo === "grupo5" ? "#246a73" : "",
+              backgroundColor: grupo === "grupo5" ? "#5c7260" : "",
               borderRadius: ".5rem",
               padding: ".5rem",
               border: "none",

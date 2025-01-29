@@ -88,7 +88,6 @@
   align-items: center;
 }
 .modelsList {
-  background-color: red;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -98,6 +97,8 @@
 .Banner {
   position: relative;
 }
+  
+
 
 .circlehome {
   width: 600px;
@@ -122,4 +123,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Home-imagem{
+  border-top-left-radius: 0;  /* Arredonda o canto superior esquerdo */
+  border-top-right-radius: 0; /* Arredonda o canto superior direito */
+  border-bottom-left-radius: 10px;  /* Mantém os cantos inferiores retos */
+  border-bottom-right-radius: 50px;
 }

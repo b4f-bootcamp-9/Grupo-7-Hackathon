@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.container{
+    font-family: "Roboto", serif;
+    background-color: #5c7260c4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px;  /* Arredonda o canto superior esquerdo */
+    border-top-right-radius: 10px; /* Arredonda o canto superior direito */
+    border-bottom-left-radius: 0;  /* Mantém os cantos inferiores retos */
+    border-bottom-right-radius: 0;
+}
+
+.input{
+   padding: .4rem;
+    margin: 2rem;
+    width: 200px;
+    height: 25px;
+    border: 2px solid #3a5a40;
+    border-radius: 5px; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.211), 0 2px 14px rgba(0, 0, 0, 0.163);    
+    
+}
+.input::placeholder{
+    color: grey;
+    opacity : 0.5;
+}
+.btn {
+    font-family: "Roboto", serif;
+    width: 150px;
+    height: 40px;
+    font-size: 1rem;
+    color: #5c7260;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.625rem;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.211), 0 2px 14px rgba(0, 0, 0, 0.163);
+    cursor: pointer;
+    border: none;
+    margin: 3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1); /* Aumenta um pouco o botão */
+    background-color: #3A5A40; /* Muda a cor para verde */
+    color: white; /* Altera a cor do texto para branco */
+}
