@@ -68,17 +68,20 @@ export default function HomePage() {
   if (error) return <p>{error}</p>;
   return (
     <div>
-      <Search />
+      <Search className={styles.search}/>
       <div className={styles.Banner}>
         <div className={styles.HomePic}>
           <Image
             src="/images/Home.png"
             alt="Tenis Home"
-            width={1890}
+            width={1888}
             height={800}
             style={{
-              borderRadius: "15px",
               boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+              borderTopLeftRadius: "0",
+              borderTopRightRadius: "0",
+              borderBottomLeftRadius: "10px",
+              borderBottomRightRadius: "10px"
             }}
           />
         </div>
@@ -110,7 +113,7 @@ export default function HomePage() {
               <CardBack
                 model={model.model}
                 brand={model.brand}
-                imageSrc={model.imageSrc}
+                imageSrc={model.imagem}
               />
             </ul>
           ))
@@ -135,14 +138,21 @@ export default function HomePage() {
      
       </div> 
       <div>
-      <h2>
+      <h2         style={{
+          fontFamily: "Roboto",
+          textAlign: "center",
+          fontSize: "2rem",
+          margin: "2.5rem",
+          color: "black",
+          margin: "2rem",
+        }}>
         Confira todos os nossos produtos!</h2>
       </div>
       {/* CardBack */} <BrandFilter />
       <div className={styles.contactSection}>
         {" "}
         {modalValue ? <Modal onClose={handleModal} /> : null}
-        <Pedidoespecial
+        <Pedidoespecial 
           onClick={handleModal}
           title="Quero um Modelo Especial"
         />
