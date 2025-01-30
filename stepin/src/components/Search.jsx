@@ -39,8 +39,8 @@ export default function Search() {
 
   return (
     <div className={styles.container}>
-      <h1>Não perca tempo!</h1> 
-      <h2>Procure os seus ténis agora e dê um passo em frente no seu estilo.</h2>
+      <h1 className={styles.text1}>Não perca tempo!</h1> 
+      <h2 className={styles.text2}>Procure os seus ténis agora e dê um passo em frente no seu estilo.</h2>
       <div>
         <input className={styles.input}
           type="text"

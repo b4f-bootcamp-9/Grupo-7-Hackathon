@@ -18,16 +18,14 @@ export default function Login() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email: useEmail, senha: usePass }),
     };
-    //FETCH PARA O END-POINT
+   
     const res = await fetch("/api/login", options);
     if (res.status === 200) {
-      //REENCAMINHAR PARA OUTRA PAGINA
+      
       router.push("/back-office");
     } else if (res.status === 401) {
-      // Atualizar a mensagem de erro se as credenciais forem inválidas
       setErrorMessage("Email ou senha incorretos. Tente novamente.");
     } else {
-      // Mensagem genérica para outros erros
       setErrorMessage("Ocorreu um erro. Tente novamente mais tarde.");
     }
   };
@@ -42,7 +40,7 @@ export default function Login() {
           <form>
             <h2>Conecte-se com sua conta!</h2>
             {errorMessage && (
-              <p className={styles.error}>{errorMessage}</p> // Mostrar mensagem de erro
+              <p className={styles.error}>{errorMessage}</p> 
             )}
             <input
               type="text"

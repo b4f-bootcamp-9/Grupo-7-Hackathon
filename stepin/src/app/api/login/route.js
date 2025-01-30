@@ -1,4 +1,4 @@
-import { ReadUser } from "@/services/userServices";
+import { ReadUser } from "@/services/adminServices";
 import { NextResponse } from "next/server";
 
 export async function POST(req) {

@@ -3,13 +3,13 @@ import React from "react";
 import styles from "../app/styles/Announcement.module.css"; // Importação correta do CSS Module
 import { Pedidoespecial } from "./Pedidoespecial";
 
-export default function AnnoucementPage() {
+export default function DetailsPage() {
   return (
     <div className={styles.container}>
       {/* Seção de Informações */}
       <div className={styles.infoSection}>
         <h2>Informações sobre o produto:</h2>
-        <p>Sapato Puma Future Rider Play On</p>
+        <p>Sapato New Balance 990</p>
         <p>Categoria: Sapatos Lazer</p>
         <p>Masculino</p>
         <br></br>
@@ -38,10 +38,13 @@ export default function AnnoucementPage() {
           />
         </div>
       </div>
+
+      {/* Seção de Imagem */}
       <div className={styles.imageSection}>
         <div className={styles.imageBox}>
+          {/* Aqui você adiciona sua imagem */}
           <img
-            src="/images/tenis1.png"
+            src="/images/newbalance1.png"
             alt="Sapato Puma Future Rider Play On"
             width={"500px"}
             className={styles.image}

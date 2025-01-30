@@ -4,48 +4,29 @@ import styles from "../app/styles/CardBack.module.css";
 import { useRouter } from "next/navigation";
 
 const CardBack = ({ model, brand, imageSrc, onClick }) => {
-
   const router = useRouter();
   return (
     <div className={styles.card} onClick={onClick}>
       {/* Imagem */}
       <div className={styles.imageContainer}>
-        <img 
-          src={"./images/"+imageSrc || "/Images/cardback.png"} 
-          alt={brand || "Imagem do fornecedor"} 
-          className={styles.image} 
+        <img
+          src={"./images/" + imageSrc || "/Images/cardback.png"}
+          alt={brand || "Imagem do fornecedor"}
+          className={styles.image}
         />
       </div>
-
-{/* Conteúdo do card */}
-<div className={styles.content}>
-        {/* <h2 className={styles.title}>{brand}</h2> */}
-        {/* <div className={styles.infoRow}> */}
-          {/* Estrelas e avaliações */}
-          <div className={styles.starsContainer}>
-            {/* {Array.from({ length: 5 }, (_, index) => (
-              <span key={index} className={index < stars ? styles.starFilled : styles.starEmpty}>
-                ★
-              </span>
-            ))}
-              <span className={`${styles.reviewsText} ${styles.hiddenText}`}> 
-               {stars}
-              </span> */}
-          </div>
-        </div>
-        <div className={styles.infoRow}>
+      <div className={styles.content}>
+        <div className={styles.starsContainer}></div>
+      </div>
+      <div className={styles.infoRow}>
         <span className={styles.infoText}>
-        <strong>Marca:</strong> {brand}
+          <strong>Marca:</strong> {brand}
         </span>
         <span className={styles.infoText}>
-        <strong>Modelo:</strong> {model}
-          </span>
+          <strong>Modelo:</strong> {model}
+        </span>
         {/* Botão posicionado no canto inferior direito */}
         <div className={styles.buttonContainer}>
-          {/* <Sabermais title={"Saber Mais"} onClick={() =>
-                  router.push(
-                    "/announcement"
-                  )} /> */}
         </div>
       </div>
     </div>
@@ -53,4 +34,3 @@ const CardBack = ({ model, brand, imageSrc, onClick }) => {
 };
 
 export default CardBack;
-

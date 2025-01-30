@@ -11,7 +11,6 @@ export default function BrandFilter() {
   const params = useSearchParams();
   const brand = params.get("brand");
 
-  // Função para buscar os modelos de uma marca
   const fetchModels = async (brand) => {
     try {
       const url = brand ? `/api/find-brand?brand=${brand}` : "/api/find-brand";
@@ -37,7 +36,7 @@ export default function BrandFilter() {
   };
   useEffect(() => {
     setSelectedBrand(brand);
-    fetchModels(brand); // "null" equivale ao filtro "All"
+    fetchModels(brand);
   }, [brand]);
 
   const handleBrandClick = (brand) => {
@@ -51,7 +50,7 @@ export default function BrandFilter() {
       <div className={styles.buttons}>
         {/* Botões para filtrar as marcas */}
         <button
-        className={styles.btn}
+          className={styles.btn}
           style={{
             color: selectedBrand === "adidas" ? "white" : "black",
             backgroundColor: selectedBrand === "adidas" ? "#3a5440" : "",
@@ -64,7 +63,7 @@ export default function BrandFilter() {
           Adidas
         </button>
         <button
-        className={styles.btn}
+          className={styles.btn}
           style={{
             color: selectedBrand === "new balance" ? "white" : "black",
             backgroundColor: selectedBrand === "new balance" ? "#3a5440" : "",
@@ -77,7 +76,7 @@ export default function BrandFilter() {
           New Balance
         </button>
         <button
-        className={styles.btn}
+          className={styles.btn}
           style={{
             color: selectedBrand === "nike" ? "white" : "black",
             backgroundColor: selectedBrand === "nike" ? "#3a5440" : "",
@@ -90,7 +89,7 @@ export default function BrandFilter() {
           Nike
         </button>
         <button
-        className={styles.btn}
+          className={styles.btn}
           style={{
             color: selectedBrand === "puma" ? "white" : "black",
             backgroundColor: selectedBrand === "puma" ? "#3a5440" : "",
@@ -103,7 +102,7 @@ export default function BrandFilter() {
           Puma
         </button>
         <button
-        className={styles.btn}
+          className={styles.btn}
           style={{
             color: selectedBrand === null ? "white" : "black",
             backgroundColor: selectedBrand === null ? "#3a5440" : "",
@@ -124,13 +123,10 @@ export default function BrandFilter() {
           models.map((model, index, imagem) => (
             <ul key={index}>
               <CardBack
-              onClick={() =>
-                  router.push(
-                    "/details"
-                  )}
+                onClick={() => router.push("/details")}
                 model={model.model}
                 brand={model.brand}
-                imageSrc={model.imagem} 
+                imageSrc={model.imagem}
               />
             </ul>
           ))

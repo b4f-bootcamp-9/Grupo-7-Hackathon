@@ -7,3 +7,8 @@
   padding: auto;
 }
 
+.erro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

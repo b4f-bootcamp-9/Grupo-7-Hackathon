@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "../app/styles/Footer.module.css";
-// import styles from "./s; // Importa o arquivo CSS
-import Link from "next/link"; // Para links internos e externos
-import Image from "next/image"; // Para o logo e ícones
+import Link from "next/link"; 
+
 
 const Footer = () => {
   return (

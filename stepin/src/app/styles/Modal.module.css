@@ -1,4 +1,4 @@
-/* Modal.module.css */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 .container {
   font-family: "Roboto", serif;
   background-color: #3A5A40;
@@ -65,16 +65,16 @@
 }
 
 .enviar {
-  background: #007bff;
-  color: white;
+  background: rgb(202, 202, 202);
+  color: #3A5A40;
   padding: 0.8rem 1.5rem;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s;
 }
 
 .enviar:hover {
-  background: #0056b3;
+  background: #3A5A40;
+  color:rgb(202, 202, 202) ;
 }

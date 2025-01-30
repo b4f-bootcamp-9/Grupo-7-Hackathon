@@ -1,8 +1,8 @@
 const {getMongoCollection} = require("./mongodb")
-const col = "users"
+const col = "admin"
 const db = "stepin"
 
-async function FindOneUser(data) {
+async function FindOneAdmin(data) {
     try {
         const collection = await getMongoCollection(db, col);
         const result = await collection.findOne({email: data.email, senha: data.senha});
@@ -19,4 +19,4 @@ async function FindOneUser(data) {
 }
 
 
-module.exports =  {FindOneUser}
+module.exports =  {FindOneAdmin}

@@ -7,6 +7,7 @@ import Modal from "@/components/Modal";
 import CardBack from "@/components/CardBack";
 import Search from "@/components/Search";
 import { Pedidoespecial } from "@/components/Pedidoespecial";
+import { useRouter } from "next/navigation";
 
 export default function HomePage() {
   const [models, setModels] = useState([]);
@@ -16,6 +17,8 @@ export default function HomePage() {
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  const router = useRouter();
 
   const fetchModels = async (brand) => {
     try {
@@ -84,6 +87,10 @@ export default function HomePage() {
               borderBottomRightRadius: "10px"
             }}
           />
+          <div className={styles.textOverlay}>
+            <h2 className={styles.tenisTitle}> New Balance 990</h2>
+            <button onClick={() => router.push("/details-home")} className={styles.buyButton}>Compra Já</button>
+          </div>
         </div>
         <div className={styles.circlehome}>
           <img

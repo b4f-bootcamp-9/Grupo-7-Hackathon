@@ -28,7 +28,6 @@ export async function GET(req) {
       const results = await ReadBrand(query);
       
       if(searchValue && results.length === 0) {
-        // saveSearchInterest()
         addOrUpdateOrder(searchValue, brand)
       }
     

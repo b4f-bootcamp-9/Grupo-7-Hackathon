@@ -2,7 +2,7 @@ const { findOrder, incrementOrderQuantity, insertOrder, FindOrders } = require("
 
 export async function addOrUpdateOrder(model, brand) {
   try {
-    const existingOrder = await findOrder(model, brand); // Busca na camada de dados
+    const existingOrder = await findOrder(model, brand); 
 
     if (existingOrder) {
       await incrementOrderQuantity(model, brand); // Incrementa a quantidade

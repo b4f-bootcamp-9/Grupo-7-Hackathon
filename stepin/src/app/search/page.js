@@ -1,10 +1,10 @@
 "use client"
 import CardBack from "@/components/CardBack";
-import Login from "@/components/Login";
 import Search from "@/components/Search";
 import { useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import styles from "../page.module.css"
 
 export default function Page() {
     const [models, setModels] = useState([]);
@@ -14,7 +14,6 @@ export default function Page() {
     const [search, setSearch] = useState([]);
     const [erro, setErro] = useState(null);
 
-    // Dados do fornecedor
     const router = useRouter();  
 
     useEffect(() => {
@@ -41,7 +40,7 @@ export default function Page() {
           }
   
           if (filtrado.length === 0) {
-            setErro("Guardamos sua sugestão e tentaremos providenciar..");
+            setErro("Guardámos a sua sugestão e tentaremos providenciá-la..");
           } else {
             setErro(null);
           }
@@ -61,10 +60,10 @@ export default function Page() {
         <Search/>
       <div  style={{ height: "100vh" }}>
     
-        <div>
+        <div className={styles.erro}>
           {/* Renderiza mensagem de erro se existir */}
           {erro && (
-            <p style={{ color: "red", fontWeight: "bold", textAlign: "center" }}>
+            <p style={{ color: "red", fontWeight: "bold", textAlign: "center", fontSize: "36px" }}>
               {erro}
             </p>
           )}
@@ -76,11 +75,9 @@ export default function Page() {
               <CardBack 
                 model={model.model}
                 brand={model.brand}
-                imageSrc={model.imagem} // Supondo que você tenha uma URL de imagem ou um caminho
+                imageSrc={model.imagem} 
               />
-              {/* <p>Modelo: {model.model}</p>
-              <p>Marca: {model.brand}</p>
-              <p>Quantidade Vendida: {model.quantity_sold}</p> */}
+        
             </ul>
           ))
         ) : (

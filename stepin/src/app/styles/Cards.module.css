@@ -131,3 +131,49 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 50px;
 }
+
+
+.buyButton{
+  font-family: "Roboto", serif;
+  width: 200px;
+  height: 40px;
+  font-size: 1rem;
+  color: white;
+  background-color:#3A5A40;
+  border-radius: 5px;
+  padding: 0.625rem;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.211), 0 2px 14px rgba(0, 0, 0, 0.163);
+  cursor: pointer;
+  border: none;
+  margin: 3rem;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 600px;
+  right: 1425px;
+  text-align: center;
+}
+
+.buyButton:hover {
+  transform: scale(1.1);
+  background-color: rgba(201, 194, 194, 0.712);
+  color: #3A5A40;
+}
+
+.tenisTitle{
+
+  font-family: "Roboto",serif;
+  font-size: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 2px;
+  right: 1400px;
+  text-align: center;
+  opacity: 40%;
+  margin-left: 800px;
+}
+
