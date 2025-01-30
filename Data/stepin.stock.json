@@ -1,0 +1,144 @@
+[{
+  "_id": {
+    "$oid": "6799f55ed2e3f57f7894c8d6"
+  },
+  "model": "air max 2090",
+  "brand": "nike",
+  "quantity": "20",
+  "imagem": "nikeairmax2090.png"
+},
+{
+  "_id": {
+    "$oid": "6799f58ad2e3f57f7894c8d7"
+  },
+  "model": "joyride run flyknit",
+  "brand": "nike",
+  "quantity": "18",
+  "imagem": "nikejoyride.png"
+},
+{
+  "_id": {
+    "$oid": "6799f5c3d2e3f57f7894c8d8"
+  },
+  "model": "adapt bb 2.0",
+  "brand": "nike",
+  "quantity": "16",
+  "imagem": "nikeadapt.png\n"
+},
+{
+  "_id": {
+    "$oid": "6799f602d2e3f57f7894c8d9"
+  },
+  "model": "react element 55",
+  "brand": "nike",
+  "quantity": "10",
+  "imagem": "nikeelement55.png"
+},
+{
+  "_id": {
+    "$oid": "6799f672d2e3f57f7894c8da"
+  },
+  "model": "springblade",
+  "brand": "adidas",
+  "quantity": "19",
+  "imagem": "adidasspring.png"
+},
+{
+  "_id": {
+    "$oid": "6799f6f6d2e3f57f7894c8db"
+  },
+  "model": "the kobe two",
+  "brand": "adidas",
+  "quantity": "15",
+  "imagem": "adidaskobe.png"
+},
+{
+  "_id": {
+    "$oid": "6799f72ad2e3f57f7894c8dc"
+  },
+  "model": "futurecraft 4d",
+  "brand": "adidas",
+  "quantity": "17",
+  "imagem": "adidasfuture.png"
+},
+{
+  "_id": {
+    "$oid": "6799f771d2e3f57f7894c8dd"
+  },
+  "model": "tubular",
+  "brand": "adidas",
+  "quantity": "11",
+  "imagem": "adidastubular.png"
+},
+{
+  "_id": {
+    "$oid": "679a06c7d2e3f57f7894c8de"
+  },
+  "model": "flyer runner",
+  "brand": "puma",
+  "quantity": "8",
+  "imagem": "pumflyrunner.png"
+},
+{
+  "_id": {
+    "$oid": "679a08d1d2e3f57f7894c8df"
+  },
+  "model": "Future Rider Play On",
+  "brand": "puma",
+  "quantity": "9",
+  "imagem": "tenis1.png"
+},
+{
+  "_id": {
+    "$oid": "679a08f7d2e3f57f7894c8e0"
+  },
+  "model": "smash v2",
+  "brand": "puma",
+  "quantity": "21",
+  "imagem": "pumasmashv2.png"
+},
+{
+  "_id": {
+    "$oid": "679a0915d2e3f57f7894c8e1"
+  },
+  "model": "rs-x",
+  "brand": "puma",
+  "quantity": "7",
+  "imagem": "pumarsx.png"
+},
+{
+  "_id": {
+    "$oid": "679a097dd2e3f57f7894c8e2"
+  },
+  "model": "990",
+  "brand": "new balance",
+  "quantity": "25",
+  "imagem": "nb990.png"
+},
+{
+  "_id": {
+    "$oid": "679a099dd2e3f57f7894c8e3"
+  },
+  "model": "990 v5",
+  "brand": "new balance",
+  "quantity": "17",
+  "imagem": "nb990v5.png"
+},
+{
+  "_id": {
+    "$oid": "679a09c9d2e3f57f7894c8e4"
+  },
+  "model": "880 v10",
+  "brand": "new balance",
+  "quantity\\": "14",
+  "imagem": "nb880v10.png"
+},
+{
+  "_id": {
+    "$oid": "679a0a01d2e3f57f7894c8e5"
+  },
+  "model": "550",
+  "brand": "new balance",
+  "quantity": "8",
+  "imagem": "nb550.png"
+}]

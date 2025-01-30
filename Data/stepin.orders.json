@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "679a96df1a53d75b247e5a08"
+  },
+  "model": "chuck all star",
+  "brand": "converse",
+  "quantity": 3
+},
+{
+  "_id": {
+    "$oid": "679a970c1a53d75b247e5a09"
+  },
+  "model": "court retro",
+  "brand": "reebok ",
+  "quantity": 2
+},
+{
+  "_id": {
+    "$oid": "679a972e1a53d75b247e5a0a"
+  },
+  "model": "1911",
+  "brand": "fila",
+  "quantity": 2
+},
+{
+  "_id": {
+    "$oid": "679a97531a53d75b247e5a0b"
+  },
+  "model": "air force 1",
+  "brand": "nike",
+  "quantity": 2
+}]
